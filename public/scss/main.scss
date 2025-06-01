@@ -1,0 +1,156 @@
+@use 'abstracts';
+@use 'base';
+
+@use 'abstracts/_mixins.scss' as *;
+@use 'abstracts/_screens.scss' as *;
+
+@import url(../css/globals.css);
+
+.app_landing {
+  &__mx {
+    width: 100%;
+    // max-width: calc(100% - 200px);
+    max-width: 1440px;
+    padding: 0 100px;
+    margin: auto;
+
+    @include screen('xl') {
+      padding: 0;
+      max-width: calc(100% - 92px);
+    }
+
+    @include screen('md') {
+      max-width: calc(100% - 48px);
+    }
+
+    @include screen('sm') {
+      max-width: calc(100% - 24px);
+    }
+
+    &--sm {
+      @extend .app_landing__mx;
+
+      @include screen('sm') {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.app_main {
+  &__hero {
+    // background-image: url('/media/landing/hero-2x.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+    &__text_area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 64px;
+      max-width: 867px;
+      margin: auto;
+      text-align: center;
+
+      h1 {
+        color: #fff;
+        font-size: 48px;
+      }
+
+      p {
+        color: #fff;
+        font-size: 22px;
+      }
+
+      button {
+        background-color: #630A00;
+        font-size: 14px;
+        padding: 22px 16px;
+
+        &:hover {
+          background-color: #630A00;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+
+  h2 {
+    // font-family: SF Pro Display;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 100%;
+    text-align: center;
+  }
+
+  p {
+    // font-family: SF Pro Rounded;
+    font-weight: 300;
+    font-size: 18px;
+    // line-height: 37px;
+    // letter-spacing: -2%;
+    text-align: center;
+  }
+
+  &__prev_work {
+    margin: auto;
+    padding: 80px 0;
+    width: calc(100% - 100px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+
+    &__text_area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 867px;
+      margin: auto;
+
+      h2 {
+        color: #000000;
+      }
+
+      p {
+        color: #010101;
+      }
+    }
+
+    &__portfolio {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+
+      &__item {
+        &__img {
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+
+        &--1 {
+          width: 27%;
+          height: 570px;
+        }
+
+        &--2 {
+          width: 19.5%;
+          height: 414px;
+        }
+
+        &--3 {
+          width: 12.5%;
+          height: 268px;
+        }
+        
+        
+      }
+    }
+  }
+}
