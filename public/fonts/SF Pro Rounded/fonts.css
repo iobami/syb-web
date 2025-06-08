@@ -1,0 +1,76 @@
+/* SF Pro Rounded - Ultralight */
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('./SF-Pro-Rounded-Ultralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* SF Pro Rounded - Thin */
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('./SF-Pro-Rounded-Thin.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* SF Pro Rounded - Light */
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('./SF-Pro-Rounded-Light.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* SF Pro Rounded - Regular */
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('./SF-Pro-Rounded-Regular.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* SF Pro Rounded - Medium */
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('./SF-Pro-Rounded-Medium.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* SF Pro Rounded - Semibold */
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('./SF-Pro-Rounded-Semibold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* SF Pro Rounded - Bold */
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('./SF-Pro-Rounded-Bold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* SF Pro Rounded - Heavy */
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('./SF-Pro-Rounded-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* SF Pro Rounded - Black */
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('./SF-Pro-Rounded-Black.otf') format('opentype');
+  font-weight: 950;
+  font-style: normal;
+}
+
+/* Class to use SF Pro Rounded font */
+.sf-pro-rounded {
+  font-family: 'SF Pro Rounded', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: var(--font-poppins) !important ;
+  font-family: 'SF Pro Rounded', system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
 .baba_wrapper {
@@ -15,13 +15,6 @@ body {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("/public/fonts/Poppins-Regular.ttf") format("woff2");
-  font-weight: 400;
-  font-style: normal;
 }
 
 @layer base {
