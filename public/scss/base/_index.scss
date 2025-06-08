@@ -1,5 +1,5 @@
-@use 'reset';
-@use 'typography';
+@use 'reset' as *;
+@use 'typography' as *;
 
 .cursor-pointer {
   cursor: pointer;

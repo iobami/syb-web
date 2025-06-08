@@ -1,12 +1,13 @@
 @use 'abstracts';
-@use 'base';
+@use 'base' as *;
 @use 'mike';
 @use 'abstracts/_mixins.scss' as *;
 @use 'abstracts/_screens.scss' as *;
 
+@import url('../fonts/SF Pro Rounded/fonts.css');
 @import url(../css/globals.css);
 
-.app_landing {
+.app_landing {  
   &__mx {
     width: 100%;
     // max-width: calc(100% - 200px);
@@ -38,6 +39,8 @@
 }
 
 .app_main {
+  @extend .sf-pro-rounded;
+
   &__hero {
     // background-image: url('/media/landing/hero-2x.png');
     background-size: cover;

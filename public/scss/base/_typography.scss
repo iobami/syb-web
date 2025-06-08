@@ -1,5 +1,8 @@
 :root {
-  --font-family: 'Inter', sans-serif;
-  --second-family: 'CoinbaseSans', sans-serif;
-  --third-family: 'CoinbaseMono', sans-serif;
+  --font-family: 'SF Pro Rounded', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Class to use SF Pro Rounded font */
+.sf-pro-rounded {
+  font-family: 'SF Pro Rounded', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
