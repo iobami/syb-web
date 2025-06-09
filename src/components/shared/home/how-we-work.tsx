@@ -6,7 +6,6 @@ import care from "../../../../public/media/landing/collab/care.png";
 import dev from "../../../../public/media/landing/collab/dev.png";
 import pc from "../../../../public/media/landing/collab/pc.png";
 import plus from "../../../../public/media/landing/collab/Frame3594.png";
-import ellipse from "../../../../public/media/landing/collab/Ellipse9_2.png";
 
 export function HowWeWork() {
   return (
