@@ -10,23 +10,21 @@ import ellipse from "../../../../public/media/landing/collab/Ellipse9_2.png";
 
 export function HowWeWork() {
   return (
-    <section className="collab_wrapper w-full">
+    <section className="collab_wrapper w-full px-4 sm:px-6 md:px-8 py-8">
       <div className="w-full h-auto collab_container flex flex-col gap-[100px]">
-        <Image src={ellipse} alt="Background" className="bg_collab w-full h-auto" />
-
         <div className="collab_text_wrapper">
-          <section className="w-full collab_text">
-            <h2 className="font-[600]">How Do We Work</h2>
-            <p className="mt-2 text-gray-600 w-[50%]">
+          <section className="w-full collab_text text-center md:text-left">
+            <h2 className="font-[600] text-xl sm:text-2xl md:text-3xl">How Do We Work</h2>
+            <p className="mt-2 text-gray-600 w-full md:w-[50%] mx-auto md:mx-0 text-sm sm:text-base">
               We believe great work starts with clarity and collaboration.
               Our approach is simple, intentional, and designed to keep you
               involved every step of the way.
             </p>
           </section>
 
-          <section className="collab_card_wrapper mt-[120px] justify-center flex">
-            <div className="collab_card_container grid grid-cols-2 gap-[80px] auto-rows-auto gap-4 w-[50%] place-items-center">
-              <div className="collab_card h-fit max-w-[300px] w-full">
+          <section className="collab_card_wrapper mt-[80px] flex justify-center">
+            <div className="collab_card_container flex flex-wrap justify-center gap-[4rem] w-full md:w-[90%] lg:w-[80%]">
+              <div className="collab_card h-fit max-w-[300px] w-full relative">
                 <Image
                   alt="Discover"
                   src={search}
@@ -37,7 +35,7 @@ export function HowWeWork() {
                   <Image alt="Plus" src={plus} className="w-fit" />
                 </div>
               </div>
-              <div className="collab_card h-fit max-w-[300px] w-full">
+              <div className="collab_card h-fit max-w-[300px] w-full relative">
                 <Image
                   alt="Branding"
                   src={Knight}
@@ -48,7 +46,7 @@ export function HowWeWork() {
                   <Image alt="Plus" src={plus} className="w-fit" />
                 </div>
               </div>
-              <div className="collab_card h-fit max-w-[300px] w-full">
+              <div className="collab_card h-fit max-w-[300px] w-full relative">
                 <Image
                   alt="Design"
                   src={pc}
@@ -59,7 +57,7 @@ export function HowWeWork() {
                   <Image alt="Plus" src={plus} className="w-fit" />
                 </div>
               </div>
-              <div className="collab_card h-fit max-w-[300px] w-full">
+              <div className="collab_card h-fit max-w-[300px] w-full relative">
                 <Image
                   alt="Develop"
                   src={dev}
@@ -70,15 +68,15 @@ export function HowWeWork() {
                   <Image alt="Plus" src={plus} className="w-fit" />
                 </div>
               </div>
-              <div className="collab_card col-span-2 h-fit w-full max-w-[640px] mx-auto">
+              <div className="collab_card h-fit w-full max-w-[640px] relative">
                 <Image
                   alt="Support"
                   src={care}
                   className="w-[80px] absolute top-[-33%]"
                 />
-                <div className="collab_card_text mt-[2rem] gap-[5px]">
+                <div className="collab_card_text mt-[2rem] gap-[5px] text-center">
                   <p>Deliver & Support</p>
-                  <Image alt="Plus" src={plus} className="w-fit" />
+                  <Image alt="Plus" src={plus} className="w-fit mx-auto" />
                 </div>
               </div>
             </div>
@@ -86,5 +84,6 @@ export function HowWeWork() {
         </div>
       </div>
     </section>
+
   );
 } 
