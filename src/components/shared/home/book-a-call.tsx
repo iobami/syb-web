@@ -27,37 +27,49 @@ function Arrow() {
 
 export function BookACall() {
   return (
-    <section className="contact_wrapper relative h-[120vh] mt-[250px] pb-[120px]">
-      <div className="spin1 absolute top-[-8%] left-[20px]">
+    <section className="contact_wrapper relative min-h-screen mt-[250px] pb-[120px] px-4 sm:px-6">
+      <div className="spin1 absolute top-[-12%] left-[20px]">
         <Image src={spin} alt="Decorative Spin" />
       </div>
-      <div className="spin2 absolute bottom-[0] right-[20px]">
+      <div className="spin2 absolute bottom-0 right-[20px]">
         <Image src={spin} alt="Decorative Spin" />
       </div>
+
       <div className="contact_container flex flex-col">
-        <div className="contact_text flex-col flex items-center justify-center mt-[1rem]">
-          <h1>Book a Call</h1>
-          <section className="flex justify-center">
-            <p className="w-[80%]">
+        <div className="contact_text flex flex-col items-center justify-center mt-4 text-center">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold">Book a Call</h1>
+          <section className="flex justify-center mt-2">
+            <p className="w-[90%] sm:w-[80%] text-sm sm:text-base text-gray-700">
               We believe great work starts with clarity and collaboration.
               Our approach is simple, intentional, and designed to keep you
               involved every step of the way.
             </p>
           </section>
         </div>
-        <div className="contact_widget justify-center mt-[40px] flex gap-[50px] w-[100%]">
-          <div className="flex-col flex items-center w-[50%]">
-            <Image alt="Contact Representative" src={lady} className="w-[100%] h-fit" />
+
+        <div className="contact_widget flex flex-col md:flex-row justify-center mt-10 gap-8 md:gap-[50px] w-full items-center">
+          <div className="flex flex-col items-center w-full md:w-[50%]">
+            <Image
+              alt="Contact Representative"
+              src={lady}
+              className="w-full h-auto mb-4"
+            />
             <Button className="contact_btn">
               Book Now
               <Arrow />
             </Button>
           </div>
-          <div className="w-[50%]">
-            <Image alt="Calendar" src={calendar} className="w-[100%] h-fit" />
+
+          <div className="w-full md:w-[50%]">
+            <Image
+              alt="Calendar"
+              src={calendar}
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </div>
     </section>
+
   );
 } 

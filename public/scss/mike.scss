@@ -44,13 +44,9 @@
 .work_wrapper {
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 60vh;
   width: 100%;
   position: relative;
-}
-
-.team_wrapper {
-  padding: 100px 0;
 }
 
 .team_text {
@@ -89,10 +85,10 @@
 }
 
 .service_wrapper {
+ background-image: url('../media/landing/service/Bgservice.png');
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 144vh;
-  width: 100%;
-  margin: 100px 0;
+  background-position: center;
 }
 
 .service_container {
@@ -189,4 +185,19 @@
   background: linear-gradient(to right, #630A00B2, #0B0B0BB2);
   border-radius: 2rem;
   padding: 1.3rem;
+}
+
+/**** Media Queries ****/
+
+@media (max-width: 1157px) {
+  .service_wrapper {
+    background-image: url('../media/landing/service/Bgservice.png');
+    margin-top: 0 !important;
+  }
+.service_text {
+  width: 100%;
+}
+.team_text_cont{
+  width: 90%;
+}
 }

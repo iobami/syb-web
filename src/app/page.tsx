@@ -21,8 +21,8 @@ export default function Page() {
         <WorkWithUs />
         <OurServices />
         <HowWeWork />
-        <MeetTheTeam />
         <BookACall />
+        <MeetTheTeam />
         <Footer />
       </main>
     </div>
